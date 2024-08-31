@@ -52,7 +52,7 @@ const Projects = () => {
         {projects.map((project, index) => (
           <div key={index} className={styles.projectCard}>
             <div className={styles.imageContainer}>
-            <Image src={project.imageUrl} alt={project.title} className={styles.image} />
+            <img src={project.imageUrl} alt={project.title} className={styles.image} />
             </div>
             <h3>{project.title}</h3>
             <p>{project.description}</p>
