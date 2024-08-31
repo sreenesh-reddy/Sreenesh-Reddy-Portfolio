@@ -50,15 +50,7 @@ export default function Home() {
       <div className={styles.imageContainer}>
         Hi, I'm Sreenesh
       </div>
-      {/* <div className={styles.sliderContainer}>
-        <div ref={slider} className={styles.slider}>
-          <p ref={firstText}>Web development-AIML-</p>
-          <p ref={secondText}>Web development-AIML-</p>
-        </div>
-      </div>
-      <div data-scroll data-scroll-speed={0.1} className={styles.description}>
-        
-      </div> */}
+      
     </motion.main>
   )
 }

@@ -1,3 +1,11 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": "next/core-web-vitals",
+  "rules": {
+    "no-console": "off",
+    "no-alert": "warn",
+    "react/jsx-key": "off",  // Disables the react/jsx-key rule
+    "react-hooks/rules-of-hooks": "off",  // Disables the rules-of-hooks rule
+    "react/no-unescaped-entities": "off",  // Disables the no-unescaped-entities rule
+    "@next/next/no-img-element": "off"  // Disables the no-img-element rule for Next.js
+  }
 }

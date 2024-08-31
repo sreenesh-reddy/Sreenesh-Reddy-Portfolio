@@ -2,7 +2,7 @@ import styles from './style.module.scss';
 import { useScroll, motion, useTransform, useSpring } from 'framer-motion';
 import { useRef } from 'react';
 
- export default function index(){
+ export default function Index(){
     const container = useRef(null);
     const { scrollYProgress } = useScroll({
         target: container,
@@ -15,7 +15,7 @@ import { useRef } from 'react';
     <div>
     <div>Get in touch, Let's work together!</div>
     <br/>
-    <div>"Alone, we can do so little; together, we can do so much."</div>
+    <div> &quot; Alone, we can do so little; together, we can do so much.&quot;</div>
     </div>
     </div>)
 }

@@ -6,6 +6,7 @@ import { useRef, useEffect,useState } from 'react';
 import Landing from './Landing';
 import { AnimatePresence } from 'framer-motion';
 import Preloader from './Preloader';
+import Image from 'next/image';
 
 const projects = [
   {
@@ -51,7 +52,7 @@ const Projects = () => {
         {projects.map((project, index) => (
           <div key={index} className={styles.projectCard}>
             <div className={styles.imageContainer}>
-            <img src={project.imageUrl} alt={project.title} className={styles.image} />
+            <Image src={project.imageUrl} alt={project.title} className={styles.image} />
             </div>
             <h3>{project.title}</h3>
             <p>{project.description}</p>

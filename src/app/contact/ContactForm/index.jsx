@@ -1,6 +1,6 @@
 import styles from './style.module.scss'
 
-export default function index(){
+export default function Index(){
 
     const submit=(e)=>{
         console.log('submitted');
