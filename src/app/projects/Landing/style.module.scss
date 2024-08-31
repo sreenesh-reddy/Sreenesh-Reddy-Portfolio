@@ -1,0 +1,15 @@
+.container{
+    background-color: white;
+    display:flex;
+    flex-direction: column;
+    gap:30px;
+    min-height:100vh;
+    width: 100wh;
+    justify-content: center;
+    align-items: center;
+    font-size: 5em;
+    svg{
+        position: relative;
+        top:175px;
+    }
+}
