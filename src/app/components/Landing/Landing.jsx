@@ -9,7 +9,7 @@ import Rounded from '../../common/RoundedButton';
 import { slideUp } from './animation';
 import { motion } from 'framer-motion';
 
-export default function Home() {
+export default function Landing() {
 
   const firstText = useRef(null);
   const secondText = useRef(null);

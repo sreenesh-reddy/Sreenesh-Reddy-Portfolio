@@ -6,7 +6,7 @@ import Rounded from '../../common/RoundedButton';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
-export default function Index() {
+export default function Description() {
 
     const phrase = "I am a final year Bachelor of Engineering student specializing in Artificial Intelligence and Machine Learning at Chaitanya Bharathi Institute of Technology, Hyderabad.";
     const description = useRef(null);
