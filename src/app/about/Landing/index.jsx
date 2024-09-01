@@ -2,7 +2,7 @@ import styles from './style.module.scss';
 import { useScroll, motion, useTransform, useSpring } from 'framer-motion';
 import { useRef } from 'react';
 
- export default function Index(){
+ export default function Landing(){
     const container = useRef(null);
     const { scrollYProgress } = useScroll({
         target: container,
