@@ -1,12 +1,12 @@
 'use client';
-import styles from './styles.module.scss';
+import styles from './style.module.scss';
 import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { opacity, slideUp } from './anim';
 
-const words = ["Projects"]
+const words = ["Hello", "I'm", "Sreenesh Reddy", "From", "Hyderabad", "CBIT", "Welcome", "Welcome"]
 
-export default function Index() {
+export default function Preloader() {
     const [index, setIndex] = useState(0);
     const [dimension, setDimension] = useState({width: 0, height:0});
 
@@ -27,7 +27,7 @@ export default function Index() {
     const curve = {
         initial: {
             d: initialPath,
-            transition: {duration: 0.2, ease: [0.76, 0, 0.24, 1]}
+            transition: {duration: 0.7, ease: [0.76, 0, 0.24, 1]}
         },
         exit: {
             d: targetPath,
@@ -39,7 +39,7 @@ export default function Index() {
         <motion.div variants={slideUp} initial="initial" exit="exit" className={styles.introduction}>
             {dimension.width > 0 && 
             <>
-                <motion.p variants={opacity} initial="initial" animate="enter">{words[index]}</motion.p>
+                <motion.p variants={opacity} initial="initial" animate="enter"><span></span>{words[index]}</motion.p>
                 <svg>
                     <motion.path variants={curve} initial="initial" exit="exit"></motion.path>
                 </svg>
