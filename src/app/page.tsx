@@ -8,11 +8,11 @@ import { ScrollTrigger } from 'gsap/all';
 
 import { AnimatePresence } from 'framer-motion';
 import Preloader from './components/Preloader/Index';
-import Landing from './components/Landing/Index';
-import Projects from './components/Projects';
+import Landing from './components/Landing/Landing';
+import Projects from './components/Projects/Projects';
 import Description from './components/Description/Description';
 // import SlidingImages from './components/SlidingImages';
-import Contact from './components/Contact/Index';
+import Contact from './components/Contact/Contact';
 
 export default function Home() {
 
