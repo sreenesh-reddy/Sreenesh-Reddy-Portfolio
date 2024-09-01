@@ -7,12 +7,12 @@ import { ScrollTrigger } from 'gsap/all';
 
 
 import { AnimatePresence } from 'framer-motion';
-import Preloader from './components/Preloader';
-import Landing from './components/Landing';
+import Preloader from './components/Preloader/Index';
+import Landing from './components/Landing/Index';
 import Projects from './components/Projects';
-import Description from './components/Description';
+import Description from './components/Description/Index';
 // import SlidingImages from './components/SlidingImages';
-import Contact from './components/Contact';
+import Contact from './components/Contact/Index';
 
 export default function Home() {
 
