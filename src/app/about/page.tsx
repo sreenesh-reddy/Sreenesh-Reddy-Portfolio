@@ -1,11 +1,11 @@
 'use client'
 import styles from './style.module.scss'
 import { useEffect,useState } from 'react';
-import Landing from './Landing/Index'
-import Education from './Education/Index'
+import Landing from './Landing/Landing'
+import Education from './Education/Education'
 
 import { AnimatePresence } from 'framer-motion';
-import Preloader from './Preloader/Index';
+import Preloader from './Preloader/Preloader';
 
 
 export default function Home() {
