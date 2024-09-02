@@ -68,7 +68,9 @@
                     position: relative;
                     overflow: hidden;
                     display: inline-flex;
-                    
+                    @media (max-width:767px){
+                    overflow:auto;
+                    }
                 }
             }
             &:nth-of-type(2){
