@@ -4,6 +4,9 @@
     height: 100vh;
     overflow: hidden;
   background-color:white;
+  @media (max-width: 767px) {
+    overflow:auto;
+  }
   .imageContainer{
     margin-left:450px;
     display:flex;
