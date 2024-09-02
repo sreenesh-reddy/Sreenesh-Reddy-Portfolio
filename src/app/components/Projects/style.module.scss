@@ -6,6 +6,9 @@
     padding-right: 200px;
     flex-direction: column;
     margin-top: 500px;
+    @media (max-width:767px) {
+        margin-top:290px;
+    }
 
     .body{
         max-width: 1400px;
@@ -16,11 +19,22 @@
         align-items: center;
         justify-content: center;
         margin-bottom: 100px;
+        .project{
+            @media (max-width:767px) {
+                font-size:50px;
+                margin-left:10px;
+            }
+        }
         h2{
             font-size: 60px;
             margin: 0px;
             margin-bottom: 100px;
-            font-weight: 400;        
+            font-weight: 400;
+            @media (max-width:767px) {
+                font-size:35px;
+                padding-left:-100px;
+                margin-left:-100px;
+            }        
         }
         a{
             text-decoration: none;

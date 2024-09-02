@@ -87,7 +87,7 @@ export default function Projects() {
     <h2 className={styles.project}>Projects</h2>
       {
         projects.map( (project, index) => {
-          return <Project index={index} title={project.title} manageModal={manageModal} key={index} core={project.core}/>
+          return <Project index={index} title={project.title} key={index} core={project.core}/>
         })
       }
     </div>

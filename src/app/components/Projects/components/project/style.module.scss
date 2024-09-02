@@ -7,17 +7,27 @@
     border-top: 1px solid rgb(201, 201, 201);
     cursor: pointer;
     transition: all 0.2s;
+    @media (max-width:767px) {
+        padding:50px,50px,50px,50px;
+    }
 
     h2{
         font-size: 60px;
         margin: 0px;
         font-weight: 400;
         transition: all 0.4s;
+        @media (max-width:767px) {
+            font-size:10px;
+        }
     }
 
     p{
         transition: all 0.4s;
         font-weight: 300;
+        @media (max-width:767px) {
+            font-size:30px;
+            margin-left:50px;
+        }
     }
 
     &:last-of-type{

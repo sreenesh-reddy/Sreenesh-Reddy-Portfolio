@@ -1,3 +1,21 @@
+.HeaderMedium{
+    display: none;
+    @media (min-width: 768px) {
+        display: flex; // Show on medium and larger screens
+      }
+}
+
+.HeaderSmall{
+    display: block; // Show by default on small screens
+
+    @media (min-width: 768px) {
+      display: none; // Hide on medium and larger screens
+      
+    }
+}
+
+
+
 .header{
     position: absolute;
     display: flex;
@@ -10,7 +28,14 @@
     font-weight: 300;
     box-sizing: border-box;
     align-items: center;
-    
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+      }
+      
+
     .logo{
         display: flex;
         cursor: pointer;
@@ -90,7 +115,9 @@
     position: fixed;
     right: 0px;
     z-index: 20;
-
+    @media (max-width: 767px) {
+        transform: scale(1); // Show the button on small screens
+    }
     .button{
         position: relative;
         margin: 20px;
