@@ -1,8 +1,7 @@
-body{
-
+html,body{
     margin: 0px;
-
-
     cursor: wait;
-
+    padding:0px;
+    height:100%;
+    min-height: 100vh;
 }

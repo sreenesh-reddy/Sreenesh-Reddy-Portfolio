@@ -11,24 +11,28 @@ import { Margarine } from 'next/font/google';
 const projects = [
   {
     title: "Personal finance",
+    href:"/projects/Personalfinance",
     src: "c2montreal.png",
     core:"ReactJS",
     color: "#000000"
   },
   {
     title: "E-Commerce",
+    href:"/projects/personalfinance",
     src: "officestudio.png",
     core:"NextJs",
     color: "#8C8C8C"
   },
   {
     title: "File sharing",
+    href:"/personalfinance",
     src: "locomotive.png",
     core:"Django",
     color: "#EFE8D3"
   },
   {
     title: "Portfolio",
+    href:"/personalfinance",
     core:"NextJs",
     src: "silencio.png",
     color: "#706D63"
@@ -87,7 +91,7 @@ export default function Projects() {
     <h2 className={styles.project}>Projects</h2>
       {
         projects.map( (project, index) => {
-          return <Project index={index} title={project.title} key={index} core={project.core}/>
+          return <Project index={index} title={project.title} href={project.href} key={index} core={project.core}/>
         })
       }
     </div>

@@ -8,10 +8,17 @@
     justify-content: center;
     background-color: #141516;
     position: relative;
+    @media (max-width:767px) {
+        padding-left:100px;
+        padding-right:100px;
+        margin-right: 0px;
+        margin-bottom: 0%;
+        width: 267px;
+        top:10%;
+    }
     .body{
         padding-top: 200px;
         width: 100%;
-        max-width: 1800px;
         background-color: #141516;
 
         .title{

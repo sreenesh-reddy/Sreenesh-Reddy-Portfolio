@@ -8,6 +8,9 @@
     margin-top: 500px;
     @media (max-width:767px) {
         margin-top:290px;
+        padding-left: 100px;
+        padding-right: 100px;
+        width: 267px;
     }
 
     .body{
@@ -35,6 +38,9 @@
                 padding-left:-100px;
                 margin-left:-150px;
             }        
+            a{
+                text-decoration: none;
+            }
         }
         a{
             text-decoration: none;
