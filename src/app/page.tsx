@@ -8,7 +8,6 @@ import { ScrollTrigger } from 'gsap/all';
 
 import { AnimatePresence } from 'framer-motion';
 import Preloader from './components/Preloader/Preloader';
-import Personalfinance from './projects/Personalfinance';
 import Landing from './components/Landing/Landing';
 import Projects from './components/Projects/Projects';
 import Description from './components/Description/Description';
