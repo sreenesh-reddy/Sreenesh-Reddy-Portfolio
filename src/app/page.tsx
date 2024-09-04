@@ -43,13 +43,13 @@ export default function Home() {
         {isLoading && <Preloader />}
       </AnimatePresence>
       <Landing />
-       <Description />
-      
+      <div className={styles.rest}>
+      <Description />
       <section id="projects">
       <Projects />
       </section>
-      <section id="contact"><Contact/></section>
-      
+      <Contact/>
+      </div>
     </main>
   )
 }

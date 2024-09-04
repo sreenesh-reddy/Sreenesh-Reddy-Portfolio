@@ -5,7 +5,7 @@ import styles from './style.module.scss';
 import { useRef, useEffect,useState } from 'react';
 import Landing from './Landing';
 import { AnimatePresence } from 'framer-motion';
-import Preloader from '../components/Preloader/Preloader';
+import Preloader from './Preloader/Preloader';
 import Image from 'next/image';
 
 const projects = [
@@ -48,7 +48,7 @@ const Projects = () => {
       </AnimatePresence>
   <Landing/>
     <div className={styles.container}>
-      <div className={styles.grid}>
+      <div data-scroll data-scroll-speed={0.1} className={styles.grid}>
         {projects.map((project, index) => (
           <div key={index} className={styles.projectCard}>
             <div className={styles.imageContainer}>

@@ -64,7 +64,7 @@ export default function Header() {
                         </a>
                         </Magnetic>
                         <Magnetic>
-                            <a href="projects">
+                            <a href="/projects">
                                 <div className={styles.el}>
                                     Projects
                                     <div className={styles.indicator}></div>
@@ -72,7 +72,7 @@ export default function Header() {
                             </a>
                         </Magnetic>
                         <Magnetic>
-                            <a href="about">
+                            <a href="/about">
                                 <div className={styles.el}>
                                     About
                                     <div className={styles.indicator}></div>
@@ -80,7 +80,7 @@ export default function Header() {
                             </a>
                         </Magnetic>
                         <Magnetic>
-                            <a href="contact">
+                            <a href="/contact">
                                 <div className={styles.el}>
                                     Contact
                                     <div className={styles.indicator}></div>

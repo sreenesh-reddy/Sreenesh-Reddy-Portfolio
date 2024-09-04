@@ -6,15 +6,16 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    height:100%;
+    
     background-color: #141516;
-    position: relative;
     @media (max-width:767px) {
         padding-left:100px;
         padding-right:100px;
         margin-right: 0px;
         margin-bottom: 0%;
         width: 267px;
-        top:10%;
+        height:100%;
     }
     .body{
         padding-top: 200px;
