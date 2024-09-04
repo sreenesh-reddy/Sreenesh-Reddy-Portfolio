@@ -14,10 +14,9 @@ export default function Education() {
         <div className={styles.container}>
             <div className={styles.title}>
                 <motion.span variants={opacity} animate={isInView ? "open" : "closed"}>
-                    My Education
+                Education
                 </motion.span>
             </div>
-
             <div ref={description} className={styles.body}>
                 <div className={styles.inBody}>
                     <p>
@@ -27,8 +26,9 @@ export default function Education() {
                         })}
                     </p>
                     <motion.p variants={opacity} animate={isInView ? "open" : "closed"} style={{ justifyContent: "center", display: "flex", flexDirection: "column", gap: "30px" }}>
+                        <img src="/cbitlogo.png" className={styles.logo}/>
                         <span>2022 - Present</span>
-                        <span>CGPA:8.7</span>
+                        <span>8.7 CGPA</span>
                     </motion.p>
                 </div>
                 <br /> <br />
@@ -42,8 +42,9 @@ export default function Education() {
                         })}
                     </p>
                     <motion.p variants={opacity} animate={isInView ? "open" : "closed"} style={{ justifyContent: "center", display: "flex", flexDirection: "column", gap: "30px" }}>
+                    <img src="/qqgptlogo.png" className={styles.logo}/>
                         <span>2019 - 2022</span>
-                        <span>CGPA:9.4</span>
+                        <span>9.4 CGPA</span>
                     </motion.p>
                 </div>
 
