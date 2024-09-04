@@ -20,7 +20,7 @@ import { useRef } from 'react';
     </div>
     <div data-scroll data-scroll-speed={0.1} className={styles.but}>
     <div className={styles.resumeButton}>
-            <a href='resume'>Download resume</a>
+            <a target='_blank' href='https://drive.google.com/file/d/1u-bloAFXci4blDNbPNquQLTaZrqgboyE/view?usp=drive_link'>Download resume</a>
     </div>
     </div>
     </div>)
