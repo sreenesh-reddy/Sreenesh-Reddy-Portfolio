@@ -3,7 +3,7 @@ import styles from './style.module.scss'
 import { useEffect,useState } from 'react';
 import Landing from './Landing/Landing'
 import Education from './Education/Education'
-
+import Skills from './Skills/Skills'
 import { AnimatePresence } from 'framer-motion';
 import Preloader from './Preloader/Preloader';
 
@@ -32,6 +32,7 @@ export default function Home() {
   return (<>
     <Landing/>
     <Education/>
+    <Skills/>
     <div className={styles.aboutbody}>
       <AnimatePresence mode='wait'>
         {isLoading && <Preloader />}

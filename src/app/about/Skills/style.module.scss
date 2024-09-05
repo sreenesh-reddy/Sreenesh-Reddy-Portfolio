@@ -1,0 +1,33 @@
+.container{
+display:inline-flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap:50px;
+width: 70%;
+margin-top:300px;
+padding-left:200px;
+padding-right:200px;
+color:black;
+.title{
+    font-size:50px;
+    margin-bottom: 50px;
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+    padding-left:20px;
+    padding-right:20px;
+    border-radius: 10px;;
+}
+span{
+    background-color: black;
+    color:white;
+    margin-right:3px;
+    border-radius: 50px;
+    font-size:25px;
+    padding:10px;
+    transition: 0.5s ease-in-out;
+}
+span:hover{
+    background-color: rgb(73, 73, 73);
+}
+}
