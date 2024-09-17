@@ -52,7 +52,6 @@ export default function Header() {
                         <p className={styles.copyright}>©</p>
                         <div className={styles.name}>
                             <p className={styles.codeBy}>Code by Sreenesh Reddy</p>
-                            {/* <p className={styles.Sreenesh}></p> */}
                         </div>
                     </div>
                     <div className={styles.nav}>

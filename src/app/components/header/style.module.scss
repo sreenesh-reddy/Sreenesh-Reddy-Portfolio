@@ -39,8 +39,7 @@
     .logo{
         display: flex;
         cursor: pointer;
-        p{
-            margin: 0px;
+        .copyright{
             transition: all 0.5s cubic-bezier(0.76, 0, 0.24, 1);
         }
         .name{
@@ -49,20 +48,35 @@
             overflow: hidden;
             white-space: nowrap;
             margin-left: 5px;
-            transition: all 0.5s cubic-bezier(0.76, 0, 0.24, 1);
-            p{
-                position: relative;
-                transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
-                &:nth-of-type(2){
-                    padding-left: 0.3em;
-                }
-                &:nth-of-type(3){
-                    position: absolute;
-                    left: 120px;
-                    padding-left: 0.3em;
-                }
+            .codeBy{
+            transition:all 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+            opacity:0;
+            padding:0;
+            transform: translateX(-100%);
             }
         }
+        // .name{
+        //     display: flex;
+        //     position: relative;
+        //     overflow: hidden;
+        //     white-space: nowrap;
+        //     margin-left: 5px;
+        //     transition: all 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+        //     // p{
+        //     //     position: relative;
+        //     //     transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+        //     //     &:nth-of-type(2){
+        //     //         padding-left: 0.3em;
+        //     //     }
+        //     //     &:nth-of-type(3){
+        //     //         position: absolute;
+        //     //         left: 120px;
+        //     //         padding-left: 0.3em;
+        //     //     }
+        //     // }
+           
+        // }
+        
         &:hover{
             .copyright{
                 transform: rotate(360deg);
@@ -70,7 +84,8 @@
             .name{
                 padding-right: 30px;
                 .codeBy{
-                    transform: translateX(-100%);
+                    opacity:1;
+                    transform: translateX(0);
                 }
             }
         }
