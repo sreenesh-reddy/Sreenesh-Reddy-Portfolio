@@ -46,10 +46,10 @@ export default function Contact() {
                             <h3>socials</h3>
                         </span>
                         <Magnetic>
-                            <p>Instagram</p>
+                            <a href="https://www.instagram.com/sreeneshhreddy/">Instagram</a>
                         </Magnetic>
                         <Magnetic>
-                            <p>Linkedin</p>
+                            <a href="https://www.linkedin.com/in/sreenesh-reddy-186877290/">Linkedin</a>
                         </Magnetic>
                     </div>
                 </div>
