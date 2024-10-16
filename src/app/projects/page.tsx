@@ -14,12 +14,14 @@ const projects = [
     description: "Design & Development",
     year: 2024,
     imageUrl: "/expensetracker.png",
+    webUrl:"https://personalfinance-lilac.vercel.app/",
   },
   {
-    title: "E-Commerece Web app",
+    title: "Fitness Trainer Web app",
     description: "Design & Development",
     year: 2024,
-    imageUrl: "/images/background.jpg",
+    imageUrl: "/fitnessport.png",
+    webUrl:"https://vinay-fitness-trainer-portfolio.vercel.app/",
   },
   // Add more projects as needed
 ];
@@ -54,7 +56,7 @@ const Projects = () => {
             <div className={styles.imageContainer}>
             <img src={project.imageUrl} alt={project.title} className={styles.image} />
             </div>
-            <h3>{project.title}</h3>
+            <a href={project.webUrl} target='_new'><h3>{project.title}</h3></a>
             <p>{project.description}</p>
             <span>{project.year}</span>
           </div>

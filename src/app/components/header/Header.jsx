@@ -71,7 +71,7 @@ export default function Header() {
                             </a>
                         </Magnetic>
                         <Magnetic>
-                            <a href="/about">
+                            <a href="#about">
                                 <div className={styles.el}>
                                     About
                                     <div className={styles.indicator}></div>

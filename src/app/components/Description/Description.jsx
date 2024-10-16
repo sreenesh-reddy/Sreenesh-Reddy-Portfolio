@@ -43,8 +43,10 @@ export default function Description() {
         xPercent += 0.1 * direction;
       }
     return (
-        <div id="description" ref={description} className={styles.description}>
+        <div id="about" ref={description}  className={styles.description}>
+            <div className={styles.whole}>
             <div className={styles.body}>
+                
                 <p>
                     {
                         phrase.split(" ").map((word, index) => {
@@ -55,9 +57,11 @@ export default function Description() {
                 <motion.p variants={opacity} animate={isInView ? "open" : "closed"}> Driven by a passion for learning and innovation, I aspire to create impactful solutions.</motion.p>
 
                 <div data-scroll data-scroll-speed={0.1}>
+                <a target='_blank' href="https://drive.google.com/file/d/1SH7givFf2bb8msx3BD9joQh0UMAk-0Rl/view?usp=drive_link">
                     <Rounded className={styles.button}>
-                        <p><a href="./about">About me</a></p>
+                        <p>Open resume</p>
                     </Rounded>
+                    </a>
                 </div>
                 {/* <div className={styles.skills}>
                     <div className={styles.sliderContainer}>
@@ -70,7 +74,24 @@ export default function Description() {
 
                     </div>
                 </div> */}
+                            
+     
             </div>
+            <div className={styles.logobody}>
+              <div className={styles.logowhole}> 
+            <img src="/cbitlogo.png" className={styles.logo}/>
+                    
+                        <span>2022 - 2025</span>
+                        <span>8.7 CGPA</span>
+            </div>
+            <div className={styles.logowhole}>
+            <img src="/qqgptlogo.png" className={styles.logo}/>
+                        <span>2019 - 2022</span>
+                        <span>9.4 CGPA</span>
+            </div>
+            </div> 
+            </div>
+
         </div>
     )
 }
