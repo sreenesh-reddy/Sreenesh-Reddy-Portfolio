@@ -79,7 +79,7 @@ export default function Header() {
                             </a>
                         </Magnetic>
                         <Magnetic>
-                            <a href="/contact">
+                            <a href="#contact">
                                 <div className={styles.el}>
                                     Contact
                                     <div className={styles.indicator}></div>
