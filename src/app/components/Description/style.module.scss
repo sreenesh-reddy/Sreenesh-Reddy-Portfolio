@@ -22,11 +22,13 @@
         }
         .logobody{
             display:flex;
+            width: auto;
             gap:50px;
-            justify-content: left;
+            justify-content: center;
             margin-left:100px;
-            margin-top:50px;
+            margin-top:250px;
             align-items: center;
+        
             
             img{
                 height:10rem;
@@ -39,9 +41,13 @@
                 justify-content: center;
                 color:grey;
                 gap:10px;
+                transition: 0.5s ease-in-out;
                 span{
                     margin-left:30px;
                 }
+            }
+            .logowhole:hover{
+                transform: translateY(-10px);
             }
         }
     .body{

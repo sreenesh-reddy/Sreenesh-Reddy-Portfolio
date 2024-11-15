@@ -1,103 +1,287 @@
 
-.projects{
-    display: flex;
-    align-items: center;
-    padding-left: 200px;
-    padding-right: 200px;
-    flex-direction: column;
-    margin-top: 500px;
-    @media (max-width:767px) {
-        margin-top:290px;
-        padding-left: 100px;
-        padding-right: 100px;
-        width: 267px;
-    }
+// .projects{
+//     display: flex;
+//     align-items: center;
+//     padding-left: 200px;
+//     padding-right: 200px;
+//     flex-direction: column;
+//     margin-top: 500px;
+//     @media (max-width:767px) {
+//         margin-top:290px;
+//         padding-left: 100px;
+//         padding-right: 100px;
+//         width: 267px;
+//     }
 
-    .body{
-        max-width: 1400px;
-        width: 80%;
-        display: flex;
-        flex-direction: column;
+//     .body{
+//         max-width: 1400px;
+//         width: 80%;
+//         display: flex;
+//         flex-direction: column;
         
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 100px;
-        .project{
-            @media (max-width:767px) {
-                font-size:50px;
-                margin-left:10px;
-            }
-        }
-        h2{
-            font-size: 60px;
-            margin: 0px;
-            margin-bottom: 100px;
-            font-weight: 400;
-            @media (max-width:767px) {
-                font-size:35px;
-                padding-left:-100px;
-                margin-left:-150px;
-            }        
-            a{
-                text-decoration: none;
-            }
-        }
-        a{
-            text-decoration: none;
-        }
-    }
+//         align-items: center;
+//         justify-content: center;
+//         margin-bottom: 100px;
+//         .project{
+//             @media (max-width:767px) {
+//                 font-size:50px;
+//                 margin-left:10px;
+//             }
+//         }
+//         h2{
+//             font-size: 60px;
+//             margin: 0px;
+//             margin-bottom: 100px;
+//             font-weight: 400;
+//             @media (max-width:767px) {
+//                 font-size:35px;
+//                 padding-left:-100px;
+//                 margin-left:-150px;
+//             }        
+//             a{
+//                 text-decoration: none;
+//             }
+//         }
+//         a{
+//             text-decoration: none;
+//         }
+//     }
     
-    .modalContainer{
-        height: 350px;
-        width: 400px;
+//     .modalContainer{
+//         height: 350px;
+//         width: 400px;
+//         position: fixed;
+//         top: 50%;
+//         left: 50%;
+//         background-color: white;
+//         pointer-events: none;
+//         overflow: hidden;
+//         z-index: 3;
+//     }
+    
+//     .modalSlider{
+//         height: 100%;
+//         width: 100%;
+//         position: relative;
+//         transition: top 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+//     }
+    
+//     .modal{
+//         height: 100%;
+//         width: 100%;
+//         display: flex;
+//         align-items: center;
+//         justify-content: center;
+//     }
+    
+//     .modal img{
+//         height: auto;
+//     }
+    
+//     .cursor, .cursorLabel{
+//         width: 80px;
+//         height: 80px;
+//         border-radius: 50%;
+//         background-color: #455CE9;
+//         color: white;
+//         position: fixed;
+//         z-index:3;
+//         display: flex;
+//         align-items: center;
+//         justify-content: center;
+//         font-size: 14px;
+//         font-weight: 300;
+//         pointer-events: none;
+//     }
+    
+//     .cursorLabel{
+//         background-color: transparent;
+//     }
+    
+    
+// }
+
+
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+.projectbody{
+    position: relative;
+    display: flex;
+    height: 100%;
+    
+  background-color: grey;
+  & .projects{
+    margin-top:300px;
+    margin-left:100px;
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:50px;
+    justify-content: center;
+    align-items: center;
+    & .Card{
+        display:flex;
+        flex-direction: column;
+        gap:30px;
+        justify-content: center;
+        align-items: center;
+        width: 20em;
+        height:20em;
+        padding:100px;
+        & .projecttitle{
+            display: flex;
+            width: 15em;
+            justify-content: space-between;
+            align-items: center;
+            padding: 50px 100px 50px 100px;
+            cursor: pointer;
+            transition: all 0.2s;
+        
+            h2{
+                font-size: 60px;
+                margin: 0px;
+                font-weight: 400;
+                transition: all 0.4s;
+            }
+        
+            p{
+                transition: all 0.4s;
+                font-weight: 300;
+            }
+        
+            &:last-of-type{
+                border-bottom: 1px solid rgb(201, 201, 201);
+            }
+        
+            &:hover{
+                opacity: 0.5;
+        
+                h2{
+                    transform: translateX(-10px);
+                }
+        
+                p{
+                    transform: translateX(10px);
+                }
+            }
+        }
+    & .imageContainer{
+        width: 50em;
+        height: 50em;
+        position: absolute;
+
+  }
+}
+}
+}
+.curve{
+    svg, .background{
         position: fixed;
-        top: 50%;
+        height: calc(100vh + 600px);
+        width: 100vw;
+        pointer-events: none;
+        left: 0;
+        top: 0;
+    }
+    .background{
+        background-color: black;
+        transition: opacity 0s linear 0.1s;
+    }
+    .route{
+        position: absolute;
         left: 50%;
-        background-color: white;
-        pointer-events: none;
-        overflow: hidden;
-        z-index: 3;
-    }
-    
-    .modalSlider{
-        height: 100%;
-        width: 100%;
-        position: relative;
-        transition: top 0.5s cubic-bezier(0.76, 0, 0.24, 1);
-    }
-    
-    .modal{
-        height: 100%;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    .modal img{
-        height: auto;
-    }
-    
-    .cursor, .cursorLabel{
-        width: 80px;
-        height: 80px;
-        border-radius: 50%;
-        background-color: #455CE9;
+        top: 40%;
         color: white;
-        position: fixed;
-        z-index:3;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 14px;
-        font-weight: 300;
-        pointer-events: none;
+        font-size: 46px;
+        z-index: 3;
+        transform: translateX(-50%);
+        text-align: center;
     }
-    
-    .cursorLabel{
-        background-color: transparent;
-    }
-    
-    
 }
 
+
+// components/Projects.module.scss
+.container {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+    max-width: auto;
+    margin: 0 auto;
+    padding: 200px 20px;
+    max-height:auto;
+  }
+  
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width:90%;
+    gap: 20px;
+  }
+  
+  .projectCard {
+    background: transparent;
+    transition: transform 0.3s ease;
+    
+    a{
+      text-decoration: None;
+      color:black;
+      cursor:pointer;
+    }
+    .imageContainer {
+      width: 100%;
+      height: 450px; /* Set a fixed height for the image container */
+      overflow: hidden; /* Hide overflow to ensure image doesn't spill out */
+    }
+  
+    .image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* Ensure the image covers the entire container */
+      transition: transform 0.3s ease;
+    }
+    .image:hover {
+      transform: scale(1.2); /* Zoom into the image */
+    }
+  
+    .textContainer {
+
+      padding: 20px; /* Add padding to space the text from the image */
+      text-align: center;
+    }
+  
+    h3{
+        font-family: "Raleway", sans-serif;
+      font-size: 1.5em;
+      padding-top:25px;
+      transform: translateX(0px);
+      transition: 0.3s ease-in-out;
+      padding-bottom:25px;
+      padding-right: 0;
+      margin-right:0;
+      color:black
+    }
+    h3:hover{
+      transform: translateX(30px);
+      transition: 0.5s ease-in-out;
+      color:blue;
+    }
+    // h3:not(:hover){
+    //   transform: translateX(0px);
+    //   transition: 0.2s ease-in-out;
+    // }
+  
+    p {
+      border-top: 2px solid rgb(191, 191, 191);
+      padding-top:25px;
+      font-size: 1em;
+      color: #777;
+    }
+  
+    span {
+      font-size: 0.9em;
+      color: #aaa;
+    }
+  }

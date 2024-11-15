@@ -82,12 +82,17 @@ export default function Description() {
             <img src="/cbitlogo.png" className={styles.logo}/>
                     
                         <span>2022 - 2025</span>
-                        <span>8.7 CGPA</span>
+                        <span style={{fontWeight:"600", color:"black"}}>8.7 CGPA</span>
             </div>
             <div className={styles.logowhole}>
             <img src="/qqgptlogo.png" className={styles.logo}/>
                         <span>2019 - 2022</span>
-                        <span>9.4 CGPA</span>
+                        <span style={{fontWeight:"600", color:"black"}}>9.4 CGPA</span>
+            </div>
+            <div className={styles.logowhole}>
+            <img src="/images.png" className={styles.logo}/>
+                        <span>Present</span>
+                        <span style={{fontWeight:"600", color:"black"}}>AI Intern</span>
             </div>
             </div> 
             </div>
